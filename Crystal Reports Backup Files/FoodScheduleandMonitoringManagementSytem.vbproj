@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77852BA8-C53F-484B-B27B-608FD265F6A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FPMSv1.My.MyApplication</StartupObject>
+    <RootNamespace>FPMSv1</RootNamespace>
+    <AssemblyName>FPMSv1.1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\benje\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>FPMS</ProductName>
+    <PublisherName>B3NZYY</PublisherName>
+    <SuiteName>B3NZYY</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FPMSv1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FPMSv1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>recycle_bin_empty.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>51A3FD53AD95EAEA7693B27548C6A51555DD691D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FoodScheduleandMonitoringManagementSytem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.6.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.6.0\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Crystal Report\beneflist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>beneflist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\budgetreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>budgetreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\hfareport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hfareport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\monreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>monreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\nutgraph.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nutgraph.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\nutstat.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nutstat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmMonitoring.Designer.vb">
+      <DependentUpon>FrmMonitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\schedreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>schedreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB.vb" />
+    <Compile Include="FrmAccount.Designer.vb">
+      <DependentUpon>FrmAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBenefSched.Designer.vb">
+      <DependentUpon>FrmBenefSched.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBenefSched.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConversion.Designer.vb">
+      <DependentUpon>FrmConversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboard.Designer.vb">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpenseDetails.Designer.vb">
+      <DependentUpon>FrmExpenseDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpenseDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpenseList.Designer.vb">
+      <DependentUpon>FrmExpenseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpenseList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinance.Designer.vb">
+      <DependentUpon>FrmFinance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformation.Designer.vb">
+      <DependentUpon>FrmInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportBenef.Designer.vb">
+      <DependentUpon>FrmReportBenef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportBenef.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSchedule.Designer.vb">
+      <DependentUpon>FrmSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserLog.Designer.vb">
+      <DependentUpon>FrmUserLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWelcome.Designer.vb">
+      <DependentUpon>FrmWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWelcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="serverconnection.Designer.vb">
+      <DependentUpon>serverconnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="serverconnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Crystal Report\beneflist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>beneflist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\budgetreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>budgetreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\hfareport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>hfareport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\monreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>monreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\nutgraph.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>nutgraph.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\nutstat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>nutstat.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonitoring.resx">
+      <DependentUpon>FrmMonitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\schedreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>schedreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccount.resx">
+      <DependentUpon>FrmAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBenefSched.resx">
+      <DependentUpon>FrmBenefSched.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConversion.resx">
+      <DependentUpon>FrmConversion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpenseDetails.resx">
+      <DependentUpon>FrmExpenseDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpenseList.resx">
+      <DependentUpon>FrmExpenseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinance.resx">
+      <DependentUpon>FrmFinance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformation.resx">
+      <DependentUpon>FrmInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportBenef.resx">
+      <DependentUpon>FrmReportBenef.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSchedule.resx">
+      <DependentUpon>FrmSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserLog.resx">
+      <DependentUpon>FrmUserLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serverconnection.resx">
+      <DependentUpon>serverconnection.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FoodScheduleandMonitoringManagementSytem_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feeder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feeder-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uploadimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sched.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\benef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutstat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lusog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="My Project\boy.png" />
+    <Content Include="My Project\budget.png" />
+    <Content Include="My Project\calculator.png" />
+    <Content Include="My Project\dash1.png" />
+    <Content Include="My Project\diet.png" />
+    <Content Include="My Project\division.png" />
+    <Content Include="My Project\employee.png" />
+    <Content Include="My Project\file.png" />
+    <Content Include="My Project\height.png" />
+    <Content Include="My Project\plan.png" />
+    <Content Include="My Project\schedule.png" />
+    <Content Include="recycle_bin_empty.ico" />
+    <None Include="Resources\282866122_693682548362495_2471702444827797411_n.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\file2.png" />
+    <None Include="Resources\boy2.png" />
+    <None Include="Resources\dash.png" />
+    <None Include="Resources\height1.png" />
+    <None Include="Resources\plan1.png" />
+    <None Include="Resources\diet1.png" />
+    <None Include="Resources\calculator1.png" />
+    <None Include="Resources\feed7.jpg" />
+    <None Include="Resources\feed1.jpg" />
+    <None Include="Resources\feed6.jpg" />
+    <None Include="Resources\file1.png" />
+    <None Include="Resources\division1.png" />
+    <None Include="Resources\budget1.png" />
+    <None Include="Resources\schedule1.png" />
+    <None Include="Resources\boy1.png" />
+    <None Include="Resources\division.png" />
+    <None Include="Resources\boy.png" />
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\budget.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\plan.png" />
+    <None Include="Resources\diet.png" />
+    <None Include="Resources\height.png" />
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="fpmsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fpmsConnectionString (MySettings)" PropertyReference="ApplicationSettings.FPMSv1.My.MySettings.GlobalReference.Default.fpmsConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="beneficiaryTableAdapter" GeneratorDataComponentClassName="beneficiaryTableAdapter" Name="beneficiary" UserDataComponentName="beneficiaryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        beneficiaries_info.*
+FROM            beneficiaries_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="childIDD" DataSetColumn="childIDD" />
+              <Mapping SourceColumn="benef" DataSetColumn="benef" />
+              <Mapping SourceColumn="bdate" DataSetColumn="bdate" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="bmi" DataSetColumn="bmi" />
+              <Mapping SourceColumn="nutstat" DataSetColumn="nutstat" />
+              <Mapping SourceColumn="hfa" DataSetColumn="hfa" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        childIDD, benef, benefname, address, bdate, weight, height, sex, age, bmi, nutstat, hfa, datescaled
+FROM            beneficiaries_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="attendeeTableAdapter" GeneratorDataComponentClassName="attendeeTableAdapter" Name="attendee" UserDataComponentName="attendeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        attendee_info.*
+FROM            attendee_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="attendeeID" DataSetColumn="attendeeID" />
+              <Mapping SourceColumn="actcode" DataSetColumn="actcode" />
+              <Mapping SourceColumn="det" DataSetColumn="det" />
+              <Mapping SourceColumn="taymin" DataSetColumn="taymin" />
+              <Mapping SourceColumn="taymout" DataSetColumn="taymout" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="itemaddedTableAdapter" GeneratorDataComponentClassName="itemaddedTableAdapter" Name="itemadded" UserDataComponentName="itemaddedTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        itemlist_info.*
+FROM            itemlist_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="itymno" DataSetColumn="itymno" />
+              <Mapping SourceColumn="budgID" DataSetColumn="budgID" />
+              <Mapping SourceColumn="budmoney" DataSetColumn="budmoney" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="budgetTableAdapter" GeneratorDataComponentClassName="budgetTableAdapter" Name="budget" UserDataComponentName="budgetTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        budget_info.*, expense_info.*, itemlist_info.*
+FROM            budget_info, expense_info, itemlist_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="budgetID" DataSetColumn="budgetID" />
+              <Mapping SourceColumn="actvity" DataSetColumn="actvity" />
+              <Mapping SourceColumn="money" DataSetColumn="money" />
+              <Mapping SourceColumn="transacDet" DataSetColumn="transacDet" />
+              <Mapping SourceColumn="itemno" DataSetColumn="itemno" />
+              <Mapping SourceColumn="item" DataSetColumn="item" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="equal" DataSetColumn="equal" />
+              <Mapping SourceColumn="itymno" DataSetColumn="itymno" />
+              <Mapping SourceColumn="budgID" DataSetColumn="budgID" />
+              <Mapping SourceColumn="budmoney" DataSetColumn="budmoney" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="scheduleTableAdapter" GeneratorDataComponentClassName="scheduleTableAdapter" Name="schedule" UserDataComponentName="scheduleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        schedule_info.*, attendee_info.*
+FROM            schedule_info, attendee_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code" DataSetColumn="code" />
+              <Mapping SourceColumn="task" DataSetColumn="task" />
+              <Mapping SourceColumn="venue" DataSetColumn="venue" />
+              <Mapping SourceColumn="facilitator" DataSetColumn="facilitator" />
+              <Mapping SourceColumn="schedate" DataSetColumn="schedate" />
+              <Mapping SourceColumn="schetime" DataSetColumn="schetime" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="attendeeID" DataSetColumn="attendeeID" />
+              <Mapping SourceColumn="actcode" DataSetColumn="actcode" />
+              <Mapping SourceColumn="det" DataSetColumn="det" />
+              <Mapping SourceColumn="taymin" DataSetColumn="taymin" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        beneficiaries_info.*
+FROM            beneficiaries_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="childIDD" DataSetColumn="childIDD" />
+              <Mapping SourceColumn="benef" DataSetColumn="benef" />
+              <Mapping SourceColumn="benefname" DataSetColumn="benefname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="bdate" DataSetColumn="bdate" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="bmi" DataSetColumn="bmi" />
+              <Mapping SourceColumn="nutstat" DataSetColumn="nutstat" />
+              <Mapping SourceColumn="hfa" DataSetColumn="hfa" />
+              <Mapping SourceColumn="datescaled" DataSetColumn="datescaled" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="budgetrecordTableAdapter" GeneratorDataComponentClassName="budgetrecordTableAdapter" Name="budgetrecord" UserDataComponentName="budgetrecordTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        budget_info.*
+FROM            budget_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="budgetID" DataSetColumn="budgetID" />
+              <Mapping SourceColumn="actvity" DataSetColumn="actvity" />
+              <Mapping SourceColumn="money" DataSetColumn="money" />
+              <Mapping SourceColumn="expense" DataSetColumn="expense" />
+              <Mapping SourceColumn="sum" DataSetColumn="sum" />
+              <Mapping SourceColumn="transacDet" DataSetColumn="transacDet" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        beneficiaries_info.*
+FROM            beneficiaries_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="childIDD" DataSetColumn="childIDD" />
+              <Mapping SourceColumn="benef" DataSetColumn="benef" />
+              <Mapping SourceColumn="benefname" DataSetColumn="benefname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="bdate" DataSetColumn="bdate" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="bmi" DataSetColumn="bmi" />
+              <Mapping SourceColumn="nutstat" DataSetColumn="nutstat" />
+              <Mapping SourceColumn="hfa" DataSetColumn="hfa" />
+              <Mapping SourceColumn="datescaled" DataSetColumn="datescaled" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable3TableAdapter" GeneratorDataComponentClassName="DataTable3TableAdapter" Name="DataTable3" UserDataComponentName="DataTable3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fpmsConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        beneficiaries_info.*
+FROM            beneficiaries_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="childIDD" DataSetColumn="childIDD" />
+              <Mapping SourceColumn="benef" DataSetColumn="benef" />
+              <Mapping SourceColumn="benefname" DataSetColumn="benefname" />
+              <Mapping SourceColumn="midinitial" DataSetColumn="midinitial" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="bdate" DataSetColumn="bdate" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="bmi" DataSetColumn="bmi" />
+              <Mapping SourceColumn="nutstat" DataSetColumn="nutstat" />
+              <Mapping SourceColumn="hfa" DataSetColumn="hfa" />
+              <Mapping SourceColumn="datescaled" DataSetColumn="datescaled" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="beneficiary" msprop:Generator_TableClassName="beneficiaryDataTable" msprop:Generator_TableVarName="tablebeneficiary" msprop:Generator_TablePropName="beneficiary" msprop:Generator_RowDeletingName="beneficiaryRowDeleting" msprop:Generator_RowChangingName="beneficiaryRowChanging" msprop:Generator_RowEvHandlerName="beneficiaryRowChangeEventHandler" msprop:Generator_RowDeletedName="beneficiaryRowDeleted" msprop:Generator_UserTableName="beneficiary" msprop:Generator_RowChangedName="beneficiaryRowChanged" msprop:Generator_RowEvArgName="beneficiaryRowChangeEvent" msprop:Generator_RowClassName="beneficiaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="childIDD" msprop:Generator_ColumnVarNameInTable="columnchildIDD" msprop:Generator_ColumnPropNameInRow="childIDD" msprop:Generator_ColumnPropNameInTable="childIDDColumn" msprop:Generator_UserColumnName="childIDD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benef" msprop:Generator_ColumnVarNameInTable="columnbenef" msprop:Generator_ColumnPropNameInRow="benef" msprop:Generator_ColumnPropNameInTable="benefColumn" msprop:Generator_UserColumnName="benef">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bdate" msprop:Generator_ColumnVarNameInTable="columnbdate" msprop:Generator_ColumnPropNameInRow="bdate" msprop:Generator_ColumnPropNameInTable="bdateColumn" msprop:Generator_UserColumnName="bdate" type="xs:dateTime" />
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" type="xs:int" />
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" type="xs:int" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:int" />
+              <xs:element name="bmi" msprop:Generator_ColumnVarNameInTable="columnbmi" msprop:Generator_ColumnPropNameInRow="bmi" msprop:Generator_ColumnPropNameInTable="bmiColumn" msprop:Generator_UserColumnName="bmi" type="xs:int" />
+              <xs:element name="nutstat" msprop:Generator_ColumnVarNameInTable="columnnutstat" msprop:Generator_ColumnPropNameInRow="nutstat" msprop:Generator_ColumnPropNameInTable="nutstatColumn" msprop:Generator_UserColumnName="nutstat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hfa" msprop:Generator_ColumnVarNameInTable="columnhfa" msprop:Generator_ColumnPropNameInRow="hfa" msprop:Generator_ColumnPropNameInTable="hfaColumn" msprop:Generator_UserColumnName="hfa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datescaled" msprop:Generator_ColumnVarNameInTable="columndatescaled" msprop:Generator_ColumnPropNameInRow="datescaled" msprop:Generator_ColumnPropNameInTable="datescaledColumn" msprop:Generator_UserColumnName="datescaled" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="attendee" msprop:Generator_TableClassName="attendeeDataTable" msprop:Generator_TableVarName="tableattendee" msprop:Generator_RowChangedName="attendeeRowChanged" msprop:Generator_TablePropName="attendee" msprop:Generator_RowDeletingName="attendeeRowDeleting" msprop:Generator_RowChangingName="attendeeRowChanging" msprop:Generator_RowEvHandlerName="attendeeRowChangeEventHandler" msprop:Generator_RowDeletedName="attendeeRowDeleted" msprop:Generator_RowClassName="attendeeRow" msprop:Generator_UserTableName="attendee" msprop:Generator_RowEvArgName="attendeeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="attendeeID" msprop:Generator_ColumnVarNameInTable="columnattendeeID" msprop:Generator_ColumnPropNameInRow="attendeeID" msprop:Generator_ColumnPropNameInTable="attendeeIDColumn" msprop:Generator_UserColumnName="attendeeID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="actcode" msprop:Generator_ColumnVarNameInTable="columnactcode" msprop:Generator_ColumnPropNameInRow="actcode" msprop:Generator_ColumnPropNameInTable="actcodeColumn" msprop:Generator_UserColumnName="actcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="det" msprop:Generator_ColumnVarNameInTable="columndet" msprop:Generator_ColumnPropNameInRow="det" msprop:Generator_ColumnPropNameInTable="detColumn" msprop:Generator_UserColumnName="det" type="xs:dateTime" />
+              <xs:element name="taymin" msprop:Generator_ColumnVarNameInTable="columntaymin" msprop:Generator_ColumnPropNameInRow="taymin" msprop:Generator_ColumnPropNameInTable="tayminColumn" msprop:Generator_UserColumnName="taymin" type="xs:duration" />
+              <xs:element name="taymout" msprop:Generator_ColumnVarNameInTable="columntaymout" msprop:Generator_ColumnPropNameInRow="taymout" msprop:Generator_ColumnPropNameInTable="taymoutColumn" msprop:Generator_UserColumnName="taymout" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="itemadded" msprop:Generator_TableClassName="itemaddedDataTable" msprop:Generator_TableVarName="tableitemadded" msprop:Generator_TablePropName="itemadded" msprop:Generator_RowDeletingName="itemaddedRowDeleting" msprop:Generator_RowChangingName="itemaddedRowChanging" msprop:Generator_RowEvHandlerName="itemaddedRowChangeEventHandler" msprop:Generator_RowDeletedName="itemaddedRowDeleted" msprop:Generator_UserTableName="itemadded" msprop:Generator_RowChangedName="itemaddedRowChanged" msprop:Generator_RowEvArgName="itemaddedRowChangeEvent" msprop:Generator_RowClassName="itemaddedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="itymno" msprop:Generator_ColumnVarNameInTable="columnitymno" msprop:Generator_ColumnPropNameInRow="itymno" msprop:Generator_ColumnPropNameInTable="itymnoColumn" msprop:Generator_UserColumnName="itymno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="budgID" msprop:Generator_ColumnVarNameInTable="columnbudgID" msprop:Generator_ColumnPropNameInRow="budgID" msprop:Generator_ColumnPropNameInTable="budgIDColumn" msprop:Generator_UserColumnName="budgID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="budmoney" msprop:Generator_ColumnVarNameInTable="columnbudmoney" msprop:Generator_ColumnPropNameInRow="budmoney" msprop:Generator_ColumnPropNameInTable="budmoneyColumn" msprop:Generator_UserColumnName="budmoney" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="budget" msprop:Generator_TableClassName="budgetDataTable" msprop:Generator_TableVarName="tablebudget" msprop:Generator_RowChangedName="budgetRowChanged" msprop:Generator_TablePropName="budget" msprop:Generator_RowDeletingName="budgetRowDeleting" msprop:Generator_RowChangingName="budgetRowChanging" msprop:Generator_RowEvHandlerName="budgetRowChangeEventHandler" msprop:Generator_RowDeletedName="budgetRowDeleted" msprop:Generator_RowClassName="budgetRow" msprop:Generator_UserTableName="budget" msprop:Generator_RowEvArgName="budgetRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="budgetID" msprop:Generator_ColumnVarNameInTable="columnbudgetID" msprop:Generator_ColumnPropNameInRow="budgetID" msprop:Generator_ColumnPropNameInTable="budgetIDColumn" msprop:Generator_UserColumnName="budgetID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="actvity" msprop:Generator_ColumnVarNameInTable="columnactvity" msprop:Generator_ColumnPropNameInRow="actvity" msprop:Generator_ColumnPropNameInTable="actvityColumn" msprop:Generator_UserColumnName="actvity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="money" msprop:Generator_ColumnVarNameInTable="columnmoney" msprop:Generator_ColumnPropNameInRow="money" msprop:Generator_ColumnPropNameInTable="moneyColumn" msprop:Generator_UserColumnName="money" type="xs:int" />
+              <xs:element name="transacDet" msprop:Generator_ColumnVarNameInTable="columntransacDet" msprop:Generator_ColumnPropNameInRow="transacDet" msprop:Generator_ColumnPropNameInTable="transacDetColumn" msprop:Generator_UserColumnName="transacDet">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemno" msprop:Generator_ColumnVarNameInTable="columnitemno" msprop:Generator_ColumnPropNameInRow="itemno" msprop:Generator_ColumnPropNameInTable="itemnoColumn" msprop:Generator_UserColumnName="itemno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" />
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="equal" msprop:Generator_ColumnVarNameInTable="columnequal" msprop:Generator_ColumnPropNameInRow="equal" msprop:Generator_ColumnPropNameInTable="equalColumn" msprop:Generator_UserColumnName="equal" type="xs:int" />
+              <xs:element name="itymno" msprop:Generator_ColumnVarNameInTable="columnitymno" msprop:Generator_ColumnPropNameInRow="itymno" msprop:Generator_ColumnPropNameInTable="itymnoColumn" msprop:Generator_UserColumnName="itymno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="budgID" msprop:Generator_ColumnVarNameInTable="columnbudgID" msprop:Generator_ColumnPropNameInRow="budgID" msprop:Generator_ColumnPropNameInTable="budgIDColumn" msprop:Generator_UserColumnName="budgID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="budmoney" msprop:Generator_ColumnVarNameInTable="columnbudmoney" msprop:Generator_ColumnPropNameInRow="budmoney" msprop:Generator_ColumnPropNameInTable="budmoneyColumn" msprop:Generator_UserColumnName="budmoney" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="schedule" msprop:Generator_TableClassName="scheduleDataTable" msprop:Generator_TableVarName="tableschedule" msprop:Generator_TablePropName="schedule" msprop:Generator_RowDeletingName="scheduleRowDeleting" msprop:Generator_RowChangingName="scheduleRowChanging" msprop:Generator_RowEvHandlerName="scheduleRowChangeEventHandler" msprop:Generator_RowDeletedName="scheduleRowDeleted" msprop:Generator_UserTableName="schedule" msprop:Generator_RowChangedName="scheduleRowChanged" msprop:Generator_RowEvArgName="scheduleRowChangeEvent" msprop:Generator_RowClassName="scheduleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="task" msprop:Generator_ColumnVarNameInTable="columntask" msprop:Generator_ColumnPropNameInRow="task" msprop:Generator_ColumnPropNameInTable="taskColumn" msprop:Generator_UserColumnName="task">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="venue" msprop:Generator_ColumnVarNameInTable="columnvenue" msprop:Generator_ColumnPropNameInRow="venue" msprop:Generator_ColumnPropNameInTable="venueColumn" msprop:Generator_UserColumnName="venue">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="facilitator" msprop:Generator_ColumnVarNameInTable="columnfacilitator" msprop:Generator_ColumnPropNameInRow="facilitator" msprop:Generator_ColumnPropNameInTable="facilitatorColumn" msprop:Generator_UserColumnName="facilitator">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="schedate" msprop:Generator_ColumnVarNameInTable="columnschedate" msprop:Generator_ColumnPropNameInRow="schedate" msprop:Generator_ColumnPropNameInTable="schedateColumn" msprop:Generator_UserColumnName="schedate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="schetime" msprop:Generator_ColumnVarNameInTable="columnschetime" msprop:Generator_ColumnPropNameInRow="schetime" msprop:Generator_ColumnPropNameInTable="schetimeColumn" msprop:Generator_UserColumnName="schetime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="attendeeID" msprop:Generator_ColumnVarNameInTable="columnattendeeID" msprop:Generator_ColumnPropNameInRow="attendeeID" msprop:Generator_ColumnPropNameInTable="attendeeIDColumn" msprop:Generator_UserColumnName="attendeeID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="actcode" msprop:Generator_ColumnVarNameInTable="columnactcode" msprop:Generator_ColumnPropNameInRow="actcode" msprop:Generator_ColumnPropNameInTable="actcodeColumn" msprop:Generator_UserColumnName="actcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="det" msprop:Generator_ColumnVarNameInTable="columndet" msprop:Generator_ColumnPropNameInRow="det" msprop:Generator_ColumnPropNameInTable="detColumn" msprop:Generator_UserColumnName="det" type="xs:dateTime" />
+              <xs:element name="taymin" msprop:Generator_ColumnVarNameInTable="columntaymin" msprop:Generator_ColumnPropNameInRow="taymin" msprop:Generator_ColumnPropNameInTable="tayminColumn" msprop:Generator_UserColumnName="taymin" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="childIDD" msprop:Generator_ColumnVarNameInTable="columnchildIDD" msprop:Generator_ColumnPropNameInRow="childIDD" msprop:Generator_ColumnPropNameInTable="childIDDColumn" msprop:Generator_UserColumnName="childIDD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benef" msprop:Generator_ColumnVarNameInTable="columnbenef" msprop:Generator_ColumnPropNameInRow="benef" msprop:Generator_ColumnPropNameInTable="benefColumn" msprop:Generator_UserColumnName="benef">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benefname" msprop:Generator_ColumnVarNameInTable="columnbenefname" msprop:Generator_ColumnPropNameInRow="benefname" msprop:Generator_ColumnPropNameInTable="benefnameColumn" msprop:Generator_UserColumnName="benefname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bdate" msprop:Generator_ColumnVarNameInTable="columnbdate" msprop:Generator_ColumnPropNameInRow="bdate" msprop:Generator_ColumnPropNameInTable="bdateColumn" msprop:Generator_UserColumnName="bdate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" type="xs:int" />
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" type="xs:int" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:int" />
+              <xs:element name="bmi" msprop:Generator_ColumnVarNameInTable="columnbmi" msprop:Generator_ColumnPropNameInRow="bmi" msprop:Generator_ColumnPropNameInTable="bmiColumn" msprop:Generator_UserColumnName="bmi" type="xs:int" />
+              <xs:element name="nutstat" msprop:Generator_ColumnVarNameInTable="columnnutstat" msprop:Generator_ColumnPropNameInRow="nutstat" msprop:Generator_ColumnPropNameInTable="nutstatColumn" msprop:Generator_UserColumnName="nutstat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hfa" msprop:Generator_ColumnVarNameInTable="columnhfa" msprop:Generator_ColumnPropNameInRow="hfa" msprop:Generator_ColumnPropNameInTable="hfaColumn" msprop:Generator_UserColumnName="hfa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datescaled" msprop:Generator_ColumnVarNameInTable="columndatescaled" msprop:Generator_ColumnPropNameInRow="datescaled" msprop:Generator_ColumnPropNameInTable="datescaledColumn" msprop:Generator_UserColumnName="datescaled">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="budgetrecord" msprop:Generator_TableClassName="budgetrecordDataTable" msprop:Generator_TableVarName="tablebudgetrecord" msprop:Generator_TablePropName="budgetrecord" msprop:Generator_RowDeletingName="budgetrecordRowDeleting" msprop:Generator_RowChangingName="budgetrecordRowChanging" msprop:Generator_RowEvHandlerName="budgetrecordRowChangeEventHandler" msprop:Generator_RowDeletedName="budgetrecordRowDeleted" msprop:Generator_UserTableName="budgetrecord" msprop:Generator_RowChangedName="budgetrecordRowChanged" msprop:Generator_RowEvArgName="budgetrecordRowChangeEvent" msprop:Generator_RowClassName="budgetrecordRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="budgetID" msprop:Generator_ColumnVarNameInTable="columnbudgetID" msprop:Generator_ColumnPropNameInRow="budgetID" msprop:Generator_ColumnPropNameInTable="budgetIDColumn" msprop:Generator_UserColumnName="budgetID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="actvity" msprop:Generator_ColumnVarNameInTable="columnactvity" msprop:Generator_ColumnPropNameInRow="actvity" msprop:Generator_ColumnPropNameInTable="actvityColumn" msprop:Generator_UserColumnName="actvity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="money" msprop:Generator_ColumnVarNameInTable="columnmoney" msprop:Generator_ColumnPropNameInRow="money" msprop:Generator_ColumnPropNameInTable="moneyColumn" msprop:Generator_UserColumnName="money" type="xs:int" />
+              <xs:element name="expense" msprop:Generator_ColumnVarNameInTable="columnexpense" msprop:Generator_ColumnPropNameInRow="expense" msprop:Generator_ColumnPropNameInTable="expenseColumn" msprop:Generator_UserColumnName="expense" type="xs:int" />
+              <xs:element name="sum" msprop:Generator_ColumnVarNameInTable="columnsum" msprop:Generator_ColumnPropNameInRow="sum" msprop:Generator_ColumnPropNameInTable="sumColumn" msprop:Generator_UserColumnName="sum" type="xs:int" />
+              <xs:element name="transacDet" msprop:Generator_ColumnVarNameInTable="columntransacDet" msprop:Generator_ColumnPropNameInRow="transacDet" msprop:Generator_ColumnPropNameInTable="transacDetColumn" msprop:Generator_UserColumnName="transacDet">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_RowClassName="DataTable2Row" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="childIDD" msprop:Generator_ColumnVarNameInTable="columnchildIDD" msprop:Generator_ColumnPropNameInRow="childIDD" msprop:Generator_ColumnPropNameInTable="childIDDColumn" msprop:Generator_UserColumnName="childIDD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benef" msprop:Generator_ColumnVarNameInTable="columnbenef" msprop:Generator_ColumnPropNameInRow="benef" msprop:Generator_ColumnPropNameInTable="benefColumn" msprop:Generator_UserColumnName="benef">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benefname" msprop:Generator_ColumnVarNameInTable="columnbenefname" msprop:Generator_ColumnPropNameInRow="benefname" msprop:Generator_ColumnPropNameInTable="benefnameColumn" msprop:Generator_UserColumnName="benefname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bdate" msprop:Generator_ColumnVarNameInTable="columnbdate" msprop:Generator_ColumnPropNameInRow="bdate" msprop:Generator_ColumnPropNameInTable="bdateColumn" msprop:Generator_UserColumnName="bdate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" type="xs:int" />
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" type="xs:int" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:int" />
+              <xs:element name="bmi" msprop:Generator_ColumnVarNameInTable="columnbmi" msprop:Generator_ColumnPropNameInRow="bmi" msprop:Generator_ColumnPropNameInTable="bmiColumn" msprop:Generator_UserColumnName="bmi" type="xs:int" />
+              <xs:element name="nutstat" msprop:Generator_ColumnVarNameInTable="columnnutstat" msprop:Generator_ColumnPropNameInRow="nutstat" msprop:Generator_ColumnPropNameInTable="nutstatColumn" msprop:Generator_UserColumnName="nutstat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hfa" msprop:Generator_ColumnVarNameInTable="columnhfa" msprop:Generator_ColumnPropNameInRow="hfa" msprop:Generator_ColumnPropNameInTable="hfaColumn" msprop:Generator_UserColumnName="hfa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datescaled" msprop:Generator_ColumnVarNameInTable="columndatescaled" msprop:Generator_ColumnPropNameInRow="datescaled" msprop:Generator_ColumnPropNameInTable="datescaledColumn" msprop:Generator_UserColumnName="datescaled">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable3" msprop:Generator_TableClassName="DataTable3DataTable" msprop:Generator_TableVarName="tableDataTable3" msprop:Generator_TablePropName="DataTable3" msprop:Generator_RowDeletingName="DataTable3RowDeleting" msprop:Generator_RowChangingName="DataTable3RowChanging" msprop:Generator_RowEvHandlerName="DataTable3RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable3RowDeleted" msprop:Generator_UserTableName="DataTable3" msprop:Generator_RowChangedName="DataTable3RowChanged" msprop:Generator_RowEvArgName="DataTable3RowChangeEvent" msprop:Generator_RowClassName="DataTable3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="childIDD" msprop:Generator_ColumnVarNameInTable="columnchildIDD" msprop:Generator_ColumnPropNameInRow="childIDD" msprop:Generator_ColumnPropNameInTable="childIDDColumn" msprop:Generator_UserColumnName="childIDD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benef" msprop:Generator_ColumnVarNameInTable="columnbenef" msprop:Generator_ColumnPropNameInRow="benef" msprop:Generator_ColumnPropNameInTable="benefColumn" msprop:Generator_UserColumnName="benef">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="benefname" msprop:Generator_ColumnVarNameInTable="columnbenefname" msprop:Generator_ColumnPropNameInRow="benefname" msprop:Generator_ColumnPropNameInTable="benefnameColumn" msprop:Generator_UserColumnName="benefname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="midinitial" msprop:Generator_ColumnVarNameInTable="columnmidinitial" msprop:Generator_ColumnPropNameInRow="midinitial" msprop:Generator_ColumnPropNameInTable="midinitialColumn" msprop:Generator_UserColumnName="midinitial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bdate" msprop:Generator_ColumnVarNameInTable="columnbdate" msprop:Generator_ColumnPropNameInRow="bdate" msprop:Generator_ColumnPropNameInTable="bdateColumn" msprop:Generator_UserColumnName="bdate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" type="xs:int" />
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" type="xs:int" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:int" />
+              <xs:element name="bmi" msprop:Generator_ColumnVarNameInTable="columnbmi" msprop:Generator_ColumnPropNameInRow="bmi" msprop:Generator_ColumnPropNameInTable="bmiColumn" msprop:Generator_UserColumnName="bmi" type="xs:int" />
+              <xs:element name="nutstat" msprop:Generator_ColumnVarNameInTable="columnnutstat" msprop:Generator_ColumnPropNameInRow="nutstat" msprop:Generator_ColumnPropNameInTable="nutstatColumn" msprop:Generator_UserColumnName="nutstat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hfa" msprop:Generator_ColumnVarNameInTable="columnhfa" msprop:Generator_ColumnPropNameInRow="hfa" msprop:Generator_ColumnPropNameInTable="hfaColumn" msprop:Generator_UserColumnName="hfa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datescaled" msprop:Generator_ColumnVarNameInTable="columndatescaled" msprop:Generator_ColumnPropNameInRow="datescaled" msprop:Generator_ColumnPropNameInTable="datescaledColumn" msprop:Generator_UserColumnName="datescaled">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
